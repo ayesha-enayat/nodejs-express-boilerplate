@@ -1,4 +1,4 @@
-import { DELETE_DATA_MESSAGE } from '../constants/index.mjs';
+import { DELETE_DATA_MESSAGE } from "../../../constants/index.mjs";
 import deleteData from '../services/delete.mjs';
 
 const deleteController = async (req, res) => {

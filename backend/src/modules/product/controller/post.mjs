@@ -1,5 +1,5 @@
 import postData from "../services/post.mjs";
-import { POST_DATA_MESSAGE } from "../constants/index.mjs";
+import { POST_DATA_MESSAGE } from "../../../constants/index.mjs";
 
 const postController = async (req, res) => {
     try {

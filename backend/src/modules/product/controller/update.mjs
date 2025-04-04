@@ -1,5 +1,5 @@
 import updateData from '../services/update.mjs';
-import {UPDATE_DATA_MESSAGE} from '../constants/index.mjs';
+import {UPDATE_DATA_MESSAGE} from "../../../constants/index.mjs";
 
 const updateController = async (req, res) => {
     try {

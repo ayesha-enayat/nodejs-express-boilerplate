@@ -1,7 +1,17 @@
 import dotenv from 'dotenv';
 dotenv.config();
-export const ENV = (process?.env || {}) ;
+const ENV = (process?.env || {}) ;
+
+const DELETE_DATA_MESSAGE="DATA _DELETED_SUCCEFULLY";
+const UPDATE_DATA_MESSAGE="DATA _UPDATED_SUCCEFULLY";
+const INTERNALSERVER_MESSAGE="INTERNAL SERVER ERROR";
+const POST_DATA_MESSAGE="DATA _ADDED_SUCCEFULLY";
 
 
-export default ENV;
-
+export{
+    POST_DATA_MESSAGE,
+    DELETE_DATA_MESSAGE,
+    UPDATE_DATA_MESSAGE,
+    INTERNALSERVER_MESSAGE,
+    ENV
+}
