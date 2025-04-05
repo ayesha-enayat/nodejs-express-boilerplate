@@ -3,11 +3,13 @@ import getController from './controller/get.mjs';
 import postController from './controller/post.mjs';
 import deleteController from "./controller/delete.mjs";
 import updateController from "./controller/update.mjs";
+import { authentication } from "../../../helpers/index.mjs";
+
 
 
 const router = Router();
 
-router.get('/',getController);
+router.get('/',authentication,getController);
 router.post('/',postController);
 router.delete('/:id',deleteController);
 router.put('/:id',updateController);

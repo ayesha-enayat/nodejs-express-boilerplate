@@ -13,5 +13,4 @@ router.post('/',postController);
 router.delete('/:id',deleteController);
 router.put('/:id',updateController);
 
-
 export default router;
